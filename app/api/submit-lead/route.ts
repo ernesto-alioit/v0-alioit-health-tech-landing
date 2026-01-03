@@ -46,15 +46,16 @@ export async function POST(request: NextRequest) {
 
     if (!n8nWebhookUrl) {
       console.error("N8N_WEBHOOK_URL environment variable is not set")
-      // Still return success to user, but log the error
       return NextResponse.json(
         {
-          success: true,
-          message: "Lead received (webhook not configured)",
+          success: false,
+          error: "Webhook not configured. Please contact support.",
         },
-        { status: 200 },
+        { status: 500 },
       )
     }
+
+    console.log("[v0] Sending to n8n webhook...")
 
     // Send data to n8n webhook
     const webhookResponse = await fetch(n8nWebhookUrl, {
@@ -66,8 +67,28 @@ export async function POST(request: NextRequest) {
     })
 
     if (!webhookResponse.ok) {
-      console.error("Failed to send to n8n webhook:", await webhookResponse.text())
+      const errorText = await webhookResponse.text()
+      console.error("Failed to send to n8n webhook:", errorText)
+
+      let errorMessage = "Failed to submit lead"
+      try {
+        const errorJson = JSON.parse(errorText)
+        console.error("[v0] n8n webhook error:", errorJson)
+        errorMessage = `n8n webhook error: ${errorJson.message || errorJson.code || "Unknown error"}`
+      } catch {
+        console.error("[v0] n8n webhook raw error:", errorText)
+      }
+
+      return NextResponse.json(
+        {
+          success: false,
+          error: errorMessage,
+        },
+        { status: 500 },
+      )
     }
+
+    console.log("[v0] Successfully sent to n8n webhook")
 
     return NextResponse.json(
       {

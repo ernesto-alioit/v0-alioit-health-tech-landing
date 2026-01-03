@@ -1,9 +1,18 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 import { Menu } from "lucide-react"
 
 export default function HeroSection() {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact")
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <section className="relative min-h-screen flex flex-col">
       {/* Navigation */}
@@ -35,9 +44,12 @@ export default function HeroSection() {
             <Link href="#company" className="text-sm font-medium text-white hover:text-primary transition-colors">
               Company
             </Link>
-            <Link href="#contact" className="text-sm font-medium text-white hover:text-primary transition-colors">
+            <button
+              onClick={scrollToContact}
+              className="text-sm font-medium text-white hover:text-primary transition-colors"
+            >
               Contact
-            </Link>
+            </button>
           </div>
 
           <button className="md:hidden text-white">
@@ -64,10 +76,15 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
-            <Button size="lg" className="text-lg px-8 py-6">
+            <Button size="lg" className="text-lg px-8 py-6" onClick={scrollToContact}>
               Get Started
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent">
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-lg px-8 py-6 bg-transparent"
+              onClick={() => window.open("https://calendly.com/alioit/30min", "_blank")}
+            >
               Schedule a Call
             </Button>
           </div>

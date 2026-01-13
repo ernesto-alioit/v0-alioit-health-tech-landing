@@ -76,7 +76,7 @@ export default function CTASection() {
   }
 
   return (
-    <section className="py-24 px-6">
+    <section id="contact" className="py-24 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Find your vCISO today</h2>

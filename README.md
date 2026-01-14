@@ -1,4 +1,4 @@
-# AlioIT website redesign
+# AlioIT vCISO Landing Page
 
 *Automatically synced with your [v0.app](https://v0.app) deployments*
 

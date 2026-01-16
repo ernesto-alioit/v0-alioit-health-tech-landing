@@ -5,39 +5,39 @@ export default function ServicesSection() {
   const services = [
     {
       icon: Shield,
-      title: "Virtual CISO Services",
+      title: "Security Program Development",
       description:
-        "Strategic cybersecurity leadership and guidance without the cost of a full-time executive. We provide comprehensive security program development and oversight.",
+        "We design and implement comprehensive security programs tailored to health tech. From policies to technical controls, we build the foundation that protects PHI and satisfies auditors.",
     },
     {
       icon: Search,
-      title: "Security Assessments",
+      title: "Healthcare Security Assessments",
       description:
-        "Thorough vulnerability assessments and penetration testing to identify weaknesses in your systems before attackers do. Get actionable recommendations.",
+        "HIPAA-focused risk analyses, penetration testing, and vulnerability assessments designed for health tech. Identify gaps before regulators or attackers do.",
     },
     {
       icon: FileText,
-      title: "Compliance Management",
+      title: "HIPAA & Compliance Management",
       description:
-        "Navigate complex regulatory requirements including HIPAA, SOC 2, ISO 27001, and more. We ensure your organization meets all necessary standards.",
+        "Navigate HIPAA, HITRUST, SOC 2 Type II, and state privacy laws. We prepare you for audits, manage compliance documentation, and keep you current with regulatory changes.",
     },
     {
       icon: Users,
-      title: "Security Awareness Training",
+      title: "Healthcare Security Training",
       description:
-        "Empower your employees with knowledge to recognize and prevent security threats. Regular training sessions and simulated phishing campaigns.",
+        "HIPAA-compliant workforce training programs with healthcare-specific scenarios. Reduce the risk of human error that causes 82% of healthcare breaches.",
     },
     {
       icon: Lock,
-      title: "Incident Response",
+      title: "Incident Response & Recovery",
       description:
-        "24/7 incident response services to quickly contain and remediate security breaches. Minimize damage and get back to business faster.",
+        "Healthcare-specific incident response planning that meets the new 72-hour restoration requirements. Minimize patient care disruption and breach notification obligations.",
     },
     {
       icon: TrendingUp,
-      title: "Risk Management",
+      title: "Third-Party Risk Management",
       description:
-        "Comprehensive risk assessments and mitigation strategies tailored to your business. Prioritize security investments based on actual threat levels.",
+        "Evaluate and monitor your BAA partners and healthcare vendors. Ensure your supply chain doesn't become your weakest security link.",
     },
   ]
 
@@ -45,9 +45,9 @@ export default function ServicesSection() {
     <section id="services" className="py-24 px-6 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Experienced Cybersecurity Advisors</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Healthcare Security Expertise</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            Where You Need Them, When You Need Them
+            Specialized services built for the unique challenges of health tech companies
           </p>
         </div>
 
@@ -70,15 +70,15 @@ export default function ServicesSection() {
 
         <div className="mt-16 p-8 md:p-12 bg-secondary rounded-2xl text-secondary-foreground">
           <div className="max-w-3xl">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">Expert Team with Years of Experience</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">Healthcare Security Specialists</h3>
             <p className="text-secondary-foreground/80 leading-relaxed mb-6 text-pretty">
-              AlioIT's team consists of professionals who have been working in the field of cybersecurity for many
-              years. They have a deep understanding of the latest threats and vulnerabilities, as well as the most
-              effective strategies and tools for protecting against them.
+              Our team specializes in healthcare cybersecurity, with deep expertise in HIPAA, HITRUST, and the unique
+              challenges facing health tech companies. We've helped startups achieve their first SOC 2 and guided
+              established companies through complex compliance transformations.
             </p>
             <p className="text-secondary-foreground/80 leading-relaxed text-pretty">
-              Whether you're dealing with a potential data breach, a phishing attack, or another type of cyber threat,
-              our team has the experience and expertise needed to help you stay safe and secure.
+              From ransomware defense to vendor risk management, from clinical workflow security to AI governance—we
+              understand the intersection of healthcare operations and information security.
             </p>
           </div>
         </div>

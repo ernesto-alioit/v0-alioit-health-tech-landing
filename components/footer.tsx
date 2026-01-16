@@ -33,7 +33,22 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-white/80">
               <li>
                 <Link href="#services" className="hover:text-primary transition-colors">
-                  Virtual CISO
+                  Security Program Development
+                </Link>
+              </li>
+              <li>
+                <Link href="#services" className="hover:text-primary transition-colors">
+                  HIPAA Compliance
+                </Link>
+              </li>
+              <li>
+                <Link href="#services" className="hover:text-primary transition-colors">
+                  HITRUST Certification
+                </Link>
+              </li>
+              <li>
+                <Link href="#services" className="hover:text-primary transition-colors">
+                  SOC 2 Readiness
                 </Link>
               </li>
               <li>
@@ -43,22 +58,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="#services" className="hover:text-primary transition-colors">
-                  Compliance Management
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="hover:text-primary transition-colors">
-                  Security Training
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="hover:text-primary transition-colors">
                   Incident Response
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="hover:text-primary transition-colors">
-                  Risk Management
                 </Link>
               </li>
             </ul>
@@ -133,7 +133,7 @@ export default function Footer() {
                 height={35}
                 className="h-8 w-auto"
               />
-              <p className="text-sm text-white/60">Your Remote Team but Closer.</p>
+              <p className="text-sm text-white/60">Cybersecurity Programs for Health Tech</p>
             </div>
 
             <div className="flex items-center gap-4">

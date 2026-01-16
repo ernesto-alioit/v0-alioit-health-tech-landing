@@ -79,9 +79,9 @@ export default function CTASection() {
     <section id="contact" className="py-24 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Find your vCISO today</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Secure Your Health Tech Company</h2>
           <p className="text-xl text-muted-foreground text-pretty">
-            Take the first step towards comprehensive cybersecurity
+            Take the first step towards HIPAA compliance and comprehensive security
           </p>
         </div>
 
@@ -90,10 +90,10 @@ export default function CTASection() {
             <div className="space-y-6">
               <div className="space-y-4">
                 {[
-                  "Expert cybersecurity leadership",
-                  "24/7 security monitoring",
-                  "Compliance management",
-                  "Cost-effective solution",
+                  "HIPAA & HITRUST compliance expertise",
+                  "Healthcare-specific security assessments",
+                  "PHI protection & breach prevention",
+                  "Audit-ready documentation & policies",
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
@@ -119,8 +119,8 @@ export default function CTASection() {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Thank You!</h3>
                     <p className="text-muted-foreground">
-                      We've received your information and will contact you within 24 hours to discuss your cybersecurity
-                      needs.
+                      We've received your information and will contact you within 24 hours to discuss your healthcare
+                      security and compliance needs.
                     </p>
                   </div>
                   <Button onClick={() => setIsSuccess(false)} variant="outline" className="mt-4">
@@ -206,22 +206,23 @@ export default function CTASection() {
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="industry">Industry *</Label>
+                        <Label htmlFor="industry">Health Tech Segment *</Label>
                         <Select
                           value={formData.industry}
                           onValueChange={(value) => handleSelectChange("industry", value)}
                           required
                         >
                           <SelectTrigger id="industry">
-                            <SelectValue placeholder="Select industry" />
+                            <SelectValue placeholder="Select segment" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="technology">Technology</SelectItem>
-                            <SelectItem value="healthcare">Healthcare</SelectItem>
-                            <SelectItem value="finance">Finance</SelectItem>
-                            <SelectItem value="retail">Retail</SelectItem>
-                            <SelectItem value="manufacturing">Manufacturing</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
+                            <SelectItem value="digital-health">Digital Health / Telehealth</SelectItem>
+                            <SelectItem value="ehr-emr">EHR / EMR Software</SelectItem>
+                            <SelectItem value="medical-devices">Medical Devices / IoMT</SelectItem>
+                            <SelectItem value="health-analytics">Health Analytics / AI</SelectItem>
+                            <SelectItem value="pharma-biotech">Pharma / Biotech</SelectItem>
+                            <SelectItem value="payer-tech">Payer / Insurance Tech</SelectItem>
+                            <SelectItem value="other-healthtech">Other Health Tech</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
@@ -238,11 +239,11 @@ export default function CTASection() {
                           <SelectValue placeholder="Select service" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="vciso">Virtual CISO</SelectItem>
+                          <SelectItem value="security-program">Security Program Development</SelectItem>
+                          <SelectItem value="hipaa-compliance">HIPAA Compliance</SelectItem>
+                          <SelectItem value="hitrust">HITRUST Certification</SelectItem>
+                          <SelectItem value="soc2">SOC 2 Readiness</SelectItem>
                           <SelectItem value="assessment">Security Assessment</SelectItem>
-                          <SelectItem value="compliance">Compliance Management</SelectItem>
-                          <SelectItem value="training">Security Training</SelectItem>
-                          <SelectItem value="incident">Incident Response</SelectItem>
                           <SelectItem value="multiple">Multiple Services</SelectItem>
                         </SelectContent>
                       </Select>
@@ -253,7 +254,7 @@ export default function CTASection() {
                       <Textarea
                         id="currentChallenges"
                         name="currentChallenges"
-                        placeholder="Briefly describe your cybersecurity challenges..."
+                        placeholder="E.g., preparing for HIPAA audit, need SOC 2 for enterprise sales, recent security incident..."
                         value={formData.currentChallenges}
                         onChange={handleInputChange}
                         rows={3}

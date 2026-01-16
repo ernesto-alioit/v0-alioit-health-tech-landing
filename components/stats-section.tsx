@@ -4,31 +4,31 @@ export default function StatsSection() {
   const stats = [
     {
       icon: Shield,
-      number: "25+",
-      title: "Seamless Integrations",
+      number: "$9.77M",
+      title: "Average Healthcare Breach Cost",
       description:
-        "The AlioIT vCISO solution is designed to integrate seamlessly with your organization's existing technology stack. Whether it's your communication channel (Slack, Gmail, etc.) or your cloud provider (AWS, Google Cloud Platform, Microsoft Azure, etc.).",
+        "Healthcare data breaches are the most expensive of any industry—for the 13th consecutive year. Our proactive security programs help you avoid becoming a statistic by building robust defenses before attackers strike.",
     },
     {
       icon: Clock,
-      number: "24/7",
-      title: "Round-The-Clock Support",
+      number: "72hrs",
+      title: "New HIPAA Restoration Requirement",
       description:
-        "Our vCISOs are dedicated to providing round-the-clock support to our clients. We understand that security threats can occur at any time, which is why we have specialists on standby 24/7 to respond to any incidents.",
+        "The proposed HIPAA Security Rule mandates critical systems like EHRs be restored within 72 hours of a cyberattack. We help you build the resilience and recovery capabilities to meet these new standards.",
     },
     {
       icon: FileCheck,
       number: "100+",
-      title: "Technical Assessments Completed",
+      title: "Healthcare Compliance Audits",
       description:
-        "AlioIT's team of cybersecurity specialists have completed hundreds of penetration testing engagements. These assessments range from all-encompassing network penetration tests to web application assessments for startups.",
+        "Our team has guided over 100 health tech companies through HIPAA, HITRUST, SOC 2, and state privacy regulations. We know what auditors look for and help you build programs that pass the first time.",
     },
     {
       icon: DollarSign,
       number: "5x",
-      title: "Cheaper Than Traditional Hires",
+      title: "Cheaper Than Building In-House",
       description:
-        "The position of Chief Information Security Officer (CISO) is highly-demanded and well-compensated. The average base salary for a CISO in the United States is $233,507. Get expert guidance for a fraction of the cost.",
+        "With a 4 million person cybersecurity talent shortage, building an internal security team is costly and slow. Get enterprise-grade security expertise at a fraction of the cost.",
     },
   ]
 
@@ -36,9 +36,9 @@ export default function StatsSection() {
     <section className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Get ready for seamless support</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Built for Healthcare's Unique Challenges</h2>
           <p className="text-xl text-muted-foreground text-pretty">
-            Expert cybersecurity services tailored to your business needs
+            Expert cybersecurity services designed for the regulatory and technical demands of health tech
           </p>
         </div>
 

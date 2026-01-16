@@ -62,17 +62,16 @@ export default function HeroSection() {
       <div className="flex-1 flex items-center justify-center px-6 py-20">
         <div className="max-w-5xl mx-auto text-center space-y-8">
           <div className="inline-block px-4 py-2 bg-muted rounded-full text-sm font-medium text-muted-foreground mb-4">
-            Information Security Services by AlioIT Solutions
+            Cybersecurity & Compliance for Health Tech by AlioIT Solutions
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-balance">
-            <span className="text-primary">Virtual CISO</span> as a Service
+            <span className="text-primary">Cybersecurity Programs</span> for Health Tech
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            We partner with small and midsize businesses (SMBs) to provide bespoke solutions to secure your digital
-            assets, protect sensitive information, and maintain compliance with industry regulations. Gain the
-            advantages of an in-house CISO for a fraction of the cost.
+            We build and manage end-to-end security programs for healthcare technology companies. Navigate HIPAA
+            compliance, protect patient data, and pass audits with confidence—without hiring a full security team.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
@@ -96,7 +95,7 @@ export default function HeroSection() {
                 <div className="w-8 h-8 rounded-full bg-accent/20 border-2 border-background" />
                 <div className="w-8 h-8 rounded-full bg-primary/30 border-2 border-background" />
               </div>
-              <span className="text-sm font-medium">Trusted by 100+ organizations</span>
+              <span className="text-sm font-medium">Trusted by 100+ health tech companies</span>
             </div>
           </div>
         </div>

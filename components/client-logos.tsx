@@ -62,8 +62,8 @@ export default function ClientLogos() {
         </div>
 
         <p className="text-center text-muted-foreground mt-12 max-w-3xl mx-auto text-pretty">
-          Our team has helped identify and remediate vulnerabilities in Fortune 500 companies, Federal Government
-          agencies, SMBs, startups, and more. Let us help you too!
+          Our team has helped identify and remediate vulnerabilities in Fortune 500 companies,
+          SMBs, startups, and more. Let us help you too!
         </p>
       </div>
     </section>

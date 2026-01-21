@@ -32,6 +32,7 @@ export async function POST(request: NextRequest) {
         companyName: data.companyName,
         companySize: data.companySize,
         industry: data.industry,
+        maturityLevel: data.maturityLevel || "Not specified",
         servicesInterested: data.servicesInterested,
         currentChallenges: data.currentChallenges || "Not provided",
         budget: data.budget || "Not specified",

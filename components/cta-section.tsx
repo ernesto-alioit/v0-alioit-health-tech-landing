@@ -6,7 +6,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { CheckCircle2, Loader2, CheckCircle } from "lucide-react"
+import { CheckCircle2, Loader2, CheckCircle, Info } from "lucide-react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 
@@ -22,6 +22,7 @@ export default function CTASection() {
     companyName: "",
     companySize: "",
     industry: "",
+    maturityLevel: "",
     servicesInterested: "",
     currentChallenges: "",
     budget: "",
@@ -62,6 +63,7 @@ export default function CTASection() {
         companyName: "",
         companySize: "",
         industry: "",
+        maturityLevel: "",
         servicesInterested: "",
         currentChallenges: "",
         budget: "",
@@ -226,6 +228,42 @@ export default function CTASection() {
                           </SelectContent>
                         </Select>
                       </div>
+                    </div>
+
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-1.5">
+                        <Label htmlFor="maturityLevel">Security Maturity Level</Label>
+                        <div className="relative group">
+                          <Info className="w-4 h-4 text-muted-foreground cursor-help" />
+                          <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-72 p-3 bg-popover border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <p className="text-xs font-semibold mb-2">Maturity Level Definitions:</p>
+                            <ul className="text-xs space-y-1.5 text-muted-foreground">
+                              <li><span className="font-medium text-foreground">Initial:</span> Chaotic, ad hoc, individual heroics - starting point for new or undocumented processes.</li>
+                              <li><span className="font-medium text-foreground">Repeatable:</span> Process documented sufficiently to attempt repeating the same steps.</li>
+                              <li><span className="font-medium text-foreground">Defined:</span> Process defined/confirmed as a standard business process.</li>
+                              <li><span className="font-medium text-foreground">Capable:</span> Process quantitatively managed with agreed-upon metrics.</li>
+                              <li><span className="font-medium text-foreground">Efficient:</span> Process management includes deliberate optimization/improvement.</li>
+                            </ul>
+                            <div className="absolute left-1/2 -translate-x-1/2 top-full w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-border"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <Select
+                        value={formData.maturityLevel}
+                        onValueChange={(value) => handleSelectChange("maturityLevel", value)}
+                      >
+                        <SelectTrigger id="maturityLevel">
+                          <SelectValue placeholder="Select maturity level" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="na">N/A</SelectItem>
+                          <SelectItem value="initial">Initial</SelectItem>
+                          <SelectItem value="repeatable">Repeatable</SelectItem>
+                          <SelectItem value="defined">Defined</SelectItem>
+                          <SelectItem value="capable">Capable</SelectItem>
+                          <SelectItem value="efficient">Efficient</SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     <div className="space-y-2">

@@ -277,12 +277,10 @@ export default function CTASection() {
                           <SelectValue placeholder="Select service" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="security-program">Security Program Development</SelectItem>
-                          <SelectItem value="hipaa-compliance">HIPAA Compliance</SelectItem>
-                          <SelectItem value="hitrust">HITRUST Certification</SelectItem>
-                          <SelectItem value="soc2">SOC 2 Readiness</SelectItem>
-                          <SelectItem value="assessment">Security Assessment</SelectItem>
-                          <SelectItem value="multiple">Multiple Services</SelectItem>
+                          <SelectItem value="one-time-assessments">One-Time Assessments</SelectItem>
+                          <SelectItem value="recurring-maintenance">Recurring Maintenance</SelectItem>
+                          <SelectItem value="staff-augmentation">Staff Augmentation</SelectItem>
+                          <SelectItem value="comprehensive-solution">Comprehensive Solution</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
